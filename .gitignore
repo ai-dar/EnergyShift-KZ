@@ -1,0 +1,18 @@
+# окружение и кэш
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.streamlit/
+
+# регенерируемые артефакты
+data/energy_co2.db
+data/processed/bench/
+data/processed/owid_long.parquet
+outputs/results/session_log.json
+outputs/results/forecast_custom_*.csv
+outputs/results/dashboard_forecast_*
+
+# личные заметки для подготовки к защите
+docs/DEFENSE.md
