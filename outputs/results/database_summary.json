@@ -1,0 +1,147 @@
+{
+  "tables": {
+    "countries": 204,
+    "energy_annual": 7140,
+    "emissions_annual": 7140,
+    "electricity_monthly": 104082,
+    "external_factors": 177,
+    "model_metrics": 280,
+    "forecast_results": 2752
+  },
+  "db_size_mb": 15.25,
+  "queries": {
+    "01_kazakhstan_energy_emissions_join": {
+      "rows": 35,
+      "columns": [
+        "country",
+        "year",
+        "energy_twh",
+        "co2_mt",
+        "co2_per_capita",
+        "fossil_share_pct",
+        "kt_co2_per_twh"
+      ]
+    },
+    "02_continent_renewables_having": {
+      "rows": 5,
+      "columns": [
+        "continent",
+        "n_countries",
+        "avg_renewables_share",
+        "avg_fossil_share",
+        "avg_co2_per_capita"
+      ]
+    },
+    "03_peers_by_decade_cte": {
+      "rows": 12,
+      "columns": [
+        "name",
+        "pc_1990s",
+        "pc_2000s",
+        "pc_2010s",
+        "pc_2020s",
+        "co2_2020s_mt"
+      ]
+    },
+    "04_rank_per_capita_window": {
+      "rows": 15,
+      "columns": [
+        "name",
+        "continent",
+        "co2_per_capita",
+        "co2_mt",
+        "rank_world",
+        "rank_continent",
+        "n_total"
+      ]
+    },
+    "05_yoy_change_lag_window": {
+      "rows": 70,
+      "columns": [
+        "name",
+        "year",
+        "co2_mt",
+        "yoy_change_mt",
+        "yoy_change_pct",
+        "ma_3y"
+      ]
+    },
+    "06_above_world_average_subquery": {
+      "rows": 71,
+      "columns": [
+        "name",
+        "continent",
+        "co2_per_capita",
+        "ratio_to_avg",
+        "n_above_avg"
+      ]
+    },
+    "07_cumulative_emissions_window": {
+      "rows": 30,
+      "columns": [
+        "name",
+        "year",
+        "co2_mt",
+        "cumulative_since_1990",
+        "share_in_group_pct"
+      ]
+    },
+    "08_monthly_seasonality": {
+      "rows": 12,
+      "columns": [
+        "month",
+        "n_years",
+        "avg_generation_twh",
+        "avg_emissions_mt",
+        "avg_intensity",
+        "min_emissions",
+        "max_emissions"
+      ]
+    },
+    "09_energy_transition_speed": {
+      "rows": 23,
+      "columns": [
+        "name",
+        "fossil_2000",
+        "fossil_2024",
+        "fossil_change_pp",
+        "low_carbon_change_pp",
+        "transition_rank",
+        "n_countries"
+      ]
+    },
+    "10_oil_price_vs_world_emissions": {
+      "rows": 35,
+      "columns": [
+        "year",
+        "world_co2_mt",
+        "co2_growth_pct",
+        "oil_price_usd",
+        "oil_price_change_pct",
+        "temperature_anomaly"
+      ]
+    },
+    "11_data_coverage_having": {
+      "rows": 6,
+      "columns": [
+        "continent",
+        "n_countries_full_coverage",
+        "examples"
+      ]
+    },
+    "12_best_model_per_country": {
+      "rows": 35,
+      "columns": [
+        "name",
+        "frequency",
+        "best_model",
+        "best_mase",
+        "best_mape",
+        "naive_mase",
+        "gain_vs_naive_pct",
+        "train_time_s"
+      ]
+    }
+  },
+  "er_diagram": "/home/aidar/AITU/PA-FINAL/docs/er_diagram.png"
+}

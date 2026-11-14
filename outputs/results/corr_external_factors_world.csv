@@ -1,0 +1,13 @@
+factor,lag,n,pearson,spearman,series
+oil_price,0,34,0.702,0.791,World
+oil_price,1,33,0.044,0.091,World
+oil_price,2,32,-0.167,-0.21,World
+temperature_anomaly,0,34,-0.175,-0.42,World
+temperature_anomaly,1,33,0.032,0.066,World
+temperature_anomaly,2,32,0.298,0.372,World
+gdp,0,7,0.978,0.75,World
+gdp,1,7,-0.355,0.107,World
+gdp,2,7,-0.147,-0.536,World
+population,0,34,-0.01,0.018,World
+population,1,33,-0.072,0.04,World
+population,2,32,0.074,0.157,World

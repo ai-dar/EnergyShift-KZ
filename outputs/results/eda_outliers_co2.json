@@ -1,0 +1,72 @@
+{
+  "column": "co2",
+  "n_changes": 6921,
+  "iqr_bounds_pct": [
+    -16.04,
+    20.71
+  ],
+  "n_outliers_iqr": 605,
+  "n_outliers_zscore": 19,
+  "top_outliers": [
+    {
+      "country": "Equatorial Guinea",
+      "year": 1994,
+      "co2": 1.15,
+      "pct_change": 1541.43
+    },
+    {
+      "country": "Kuwait",
+      "year": 1991,
+      "co2": 492.98,
+      "pct_change": 1202.01
+    },
+    {
+      "country": "Curacao",
+      "year": 1999,
+      "co2": 1.87,
+      "pct_change": 648.4
+    },
+    {
+      "country": "Haiti",
+      "year": 1995,
+      "co2": 0.88,
+      "pct_change": 378.69
+    },
+    {
+      "country": "Aruba",
+      "year": 2000,
+      "co2": 2.38,
+      "pct_change": 193.58
+    },
+    {
+      "country": "Congo",
+      "year": 1994,
+      "co2": 3.38,
+      "pct_change": 191.72
+    },
+    {
+      "country": "Curacao",
+      "year": 2000,
+      "co2": 4.96,
+      "pct_change": 165.31
+    },
+    {
+      "country": "East Timor",
+      "year": 1999,
+      "co2": 0.15,
+      "pct_change": 150.82
+    },
+    {
+      "country": "Mozambique",
+      "year": 2014,
+      "co2": 8.12,
+      "pct_change": 126.82
+    },
+    {
+      "country": "East Timor",
+      "year": 2002,
+      "co2": 0.26,
+      "pct_change": 120.17
+    }
+  ]
+}

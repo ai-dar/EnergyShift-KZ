@@ -1,0 +1,592 @@
+{
+  "annual": {
+    "countries": [
+      "Kazakhstan",
+      "Russia",
+      "Uzbekistan",
+      "Azerbaijan",
+      "Turkmenistan",
+      "Kyrgyzstan",
+      "Australia",
+      "Canada",
+      "Norway",
+      "Saudi Arabia",
+      "Iran",
+      "Poland",
+      "South Africa",
+      "China",
+      "India",
+      "Mongolia",
+      "United States",
+      "Japan",
+      "Germany"
+    ],
+    "holdout_years": 8,
+    "kazakhstan_holdout": [
+      {
+        "model": "Naive",
+        "is_baseline": true,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.0,
+        "MAE": 22.9985,
+        "RMSE": 27.158,
+        "MAPE": 8.2805,
+        "sMAPE": 7.9157,
+        "MASE": 1.6237
+      },
+      {
+        "model": "Seasonal naive",
+        "is_baseline": true,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.0,
+        "MAE": 22.9985,
+        "RMSE": 27.158,
+        "MAPE": 8.2805,
+        "sMAPE": 7.9157,
+        "MASE": 1.6237
+      },
+      {
+        "model": "Drift",
+        "is_baseline": true,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.0,
+        "MAE": 27.9505,
+        "RMSE": 31.8326,
+        "MAPE": 10.0918,
+        "sMAPE": 9.5288,
+        "MASE": 1.9733
+      },
+      {
+        "model": "Linear trend",
+        "is_baseline": false,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.0057,
+        "MAE": 26.6302,
+        "RMSE": 35.7076,
+        "MAPE": 8.8151,
+        "sMAPE": 9.3828,
+        "MASE": 1.8801
+      },
+      {
+        "model": "ETS",
+        "is_baseline": false,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.0199,
+        "MAE": 46.7106,
+        "RMSE": 54.9268,
+        "MAPE": 17.063,
+        "sMAPE": 15.2156,
+        "MASE": 3.2978
+      },
+      {
+        "model": "ARIMA",
+        "is_baseline": false,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.3584,
+        "MAE": 24.22,
+        "RMSE": 28.2731,
+        "MAPE": 8.7357,
+        "sMAPE": 8.3177,
+        "MASE": 1.71
+      },
+      {
+        "model": "Lag LR",
+        "is_baseline": false,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.022,
+        "MAE": 63.3261,
+        "RMSE": 75.154,
+        "MAPE": 23.0582,
+        "sMAPE": 19.7982,
+        "MASE": 4.4709
+      },
+      {
+        "model": "Lag GBM",
+        "is_baseline": false,
+        "n_train": 27,
+        "n_test": 8,
+        "train_time_s": 0.1194,
+        "MAE": 61.7796,
+        "RMSE": 70.4229,
+        "MAPE": 22.429,
+        "sMAPE": 19.5417,
+        "MASE": 4.3617
+      }
+    ],
+    "kazakhstan_cv": [
+      {
+        "model": "Lag LR",
+        "MAE": 29.3557,
+        "RMSE": 32.4785,
+        "MAPE": 10.6667,
+        "sMAPE": 9.7305,
+        "MASE": 2.0555,
+        "train_time_s": 0.0032,
+        "is_baseline": false
+      },
+      {
+        "model": "Naive",
+        "MAE": 36.7694,
+        "RMSE": 40.1998,
+        "MAPE": 13.0098,
+        "sMAPE": 13.0226,
+        "MASE": 2.5365,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      },
+      {
+        "model": "Seasonal naive",
+        "MAE": 36.7694,
+        "RMSE": 40.1998,
+        "MAPE": 13.0098,
+        "sMAPE": 13.0226,
+        "MASE": 2.5365,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      },
+      {
+        "model": "Drift",
+        "MAE": 38.2703,
+        "RMSE": 41.5816,
+        "MAPE": 13.5864,
+        "sMAPE": 13.5486,
+        "MASE": 2.6418,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      },
+      {
+        "model": "Linear trend",
+        "MAE": 43.2845,
+        "RMSE": 45.8924,
+        "MAPE": 14.6879,
+        "sMAPE": 16.1362,
+        "MASE": 3.0073,
+        "train_time_s": 0.0002,
+        "is_baseline": false
+      },
+      {
+        "model": "ETS",
+        "MAE": 48.7362,
+        "RMSE": 52.1126,
+        "MAPE": 17.3024,
+        "sMAPE": 17.6498,
+        "MASE": 3.3251,
+        "train_time_s": 0.0532,
+        "is_baseline": false
+      },
+      {
+        "model": "ARIMA",
+        "MAE": 50.7294,
+        "RMSE": 53.8999,
+        "MAPE": 18.0038,
+        "sMAPE": 18.2952,
+        "MASE": 3.4733,
+        "train_time_s": 0.4916,
+        "is_baseline": false
+      },
+      {
+        "model": "Lag GBM",
+        "MAE": 56.7284,
+        "RMSE": 60.3069,
+        "MAPE": 20.2779,
+        "sMAPE": 20.7721,
+        "MASE": 3.8674,
+        "train_time_s": 0.1393,
+        "is_baseline": false
+      }
+    ],
+    "rank_all_countries": [
+      {
+        "model": "Lag GBM",
+        "mean_rank": 3.7368,
+        "median_metric": 2.4465,
+        "mean_train_time_s": 0.1312,
+        "n_series": 19,
+        "is_baseline": false
+      },
+      {
+        "model": "Seasonal naive",
+        "mean_rank": 3.8947,
+        "median_metric": 2.3935,
+        "mean_train_time_s": 0.0,
+        "n_series": 19,
+        "is_baseline": true
+      },
+      {
+        "model": "Naive",
+        "mean_rank": 3.8947,
+        "median_metric": 2.3935,
+        "mean_train_time_s": 0.0,
+        "n_series": 19,
+        "is_baseline": true
+      },
+      {
+        "model": "Lag LR",
+        "mean_rank": 4.1053,
+        "median_metric": 2.307,
+        "mean_train_time_s": 0.0054,
+        "n_series": 19,
+        "is_baseline": false
+      },
+      {
+        "model": "Drift",
+        "mean_rank": 4.4211,
+        "median_metric": 2.1811,
+        "mean_train_time_s": 0.0,
+        "n_series": 19,
+        "is_baseline": true
+      },
+      {
+        "model": "ARIMA",
+        "mean_rank": 4.4737,
+        "median_metric": 2.5869,
+        "mean_train_time_s": 0.4165,
+        "n_series": 19,
+        "is_baseline": false
+      },
+      {
+        "model": "ETS",
+        "mean_rank": 4.5263,
+        "median_metric": 1.9696,
+        "mean_train_time_s": 0.0203,
+        "n_series": 19,
+        "is_baseline": false
+      },
+      {
+        "model": "Linear trend",
+        "mean_rank": 5.5263,
+        "median_metric": 4.2764,
+        "mean_train_time_s": 0.0004,
+        "n_series": 19,
+        "is_baseline": false
+      }
+    ],
+    "selected_model": "Linear trend",
+    "future": [
+      {
+        "date": 2025,
+        "forecast": 298.7,
+        "lower": 261.0,
+        "upper": 336.4
+      },
+      {
+        "date": 2026,
+        "forecast": 302.6,
+        "lower": 249.3,
+        "upper": 355.9
+      },
+      {
+        "date": 2027,
+        "forecast": 306.5,
+        "lower": 241.3,
+        "upper": 371.8
+      },
+      {
+        "date": 2028,
+        "forecast": 310.5,
+        "lower": 235.1,
+        "upper": 385.8
+      },
+      {
+        "date": 2029,
+        "forecast": 314.4,
+        "lower": 230.1,
+        "upper": 398.7
+      },
+      {
+        "date": 2030,
+        "forecast": 318.3,
+        "lower": 226.0,
+        "upper": 410.7
+      }
+    ],
+    "future_naive_value": 287.0
+  },
+  "monthly": {
+    "countries": [
+      "Kazakhstan",
+      "Russia",
+      "Azerbaijan",
+      "Kyrgyzstan",
+      "Australia",
+      "Canada",
+      "Norway",
+      "Iran",
+      "Poland",
+      "South Africa",
+      "China",
+      "India",
+      "Mongolia",
+      "United States",
+      "Japan",
+      "Germany"
+    ],
+    "holdout_months": 12,
+    "kazakhstan_holdout": [
+      {
+        "model": "Naive",
+        "is_baseline": true,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0,
+        "MAE": 1.2133,
+        "RMSE": 1.4325,
+        "MAPE": 15.889,
+        "sMAPE": 14.2999,
+        "MASE": 3.6185
+      },
+      {
+        "model": "Seasonal naive",
+        "is_baseline": true,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0001,
+        "MAE": 0.3998,
+        "RMSE": 0.4659,
+        "MAPE": 4.801,
+        "sMAPE": 4.9566,
+        "MASE": 1.1925
+      },
+      {
+        "model": "Drift",
+        "is_baseline": true,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0,
+        "MAE": 1.2513,
+        "RMSE": 1.4794,
+        "MAPE": 16.4143,
+        "sMAPE": 14.7024,
+        "MASE": 3.732
+      },
+      {
+        "model": "Linear trend",
+        "is_baseline": false,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0002,
+        "MAE": 0.9397,
+        "RMSE": 1.0729,
+        "MAPE": 10.9164,
+        "sMAPE": 11.277,
+        "MASE": 2.8028
+      },
+      {
+        "model": "ETS",
+        "is_baseline": false,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0709,
+        "MAE": 0.4889,
+        "RMSE": 0.5676,
+        "MAPE": 5.6914,
+        "sMAPE": 5.9051,
+        "MASE": 1.458
+      },
+      {
+        "model": "ARIMA",
+        "is_baseline": false,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 9.6352,
+        "MAE": 0.3775,
+        "RMSE": 0.4622,
+        "MAPE": 4.3507,
+        "sMAPE": 4.4831,
+        "MASE": 1.1259
+      },
+      {
+        "model": "Lag LR",
+        "is_baseline": false,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.0055,
+        "MAE": 0.405,
+        "RMSE": 0.4598,
+        "MAPE": 4.7391,
+        "sMAPE": 4.8299,
+        "MASE": 1.2078
+      },
+      {
+        "model": "Lag GBM",
+        "is_baseline": false,
+        "n_train": 84,
+        "n_test": 12,
+        "train_time_s": 0.1413,
+        "MAE": 0.5367,
+        "RMSE": 0.6355,
+        "MAPE": 6.8991,
+        "sMAPE": 6.6196,
+        "MASE": 1.6005
+      }
+    ],
+    "kazakhstan_cv": [
+      {
+        "model": "ARIMA",
+        "MAE": 0.3243,
+        "RMSE": 0.4183,
+        "MAPE": 3.9183,
+        "sMAPE": 3.9356,
+        "MASE": 0.9887,
+        "train_time_s": 4.6413,
+        "is_baseline": false
+      },
+      {
+        "model": "ETS",
+        "MAE": 0.3308,
+        "RMSE": 0.4247,
+        "MAPE": 4.0288,
+        "sMAPE": 4.0635,
+        "MASE": 1.005,
+        "train_time_s": 0.0584,
+        "is_baseline": false
+      },
+      {
+        "model": "Lag LR",
+        "MAE": 0.4349,
+        "RMSE": 0.4931,
+        "MAPE": 5.3342,
+        "sMAPE": 5.3705,
+        "MASE": 1.3308,
+        "train_time_s": 0.0039,
+        "is_baseline": false
+      },
+      {
+        "model": "Seasonal naive",
+        "MAE": 0.4368,
+        "RMSE": 0.4762,
+        "MAPE": 5.4154,
+        "sMAPE": 5.5351,
+        "MASE": 1.338,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      },
+      {
+        "model": "Lag GBM",
+        "MAE": 0.5363,
+        "RMSE": 0.6592,
+        "MAPE": 6.591,
+        "sMAPE": 6.6567,
+        "MASE": 1.6359,
+        "train_time_s": 0.1368,
+        "is_baseline": false
+      },
+      {
+        "model": "Linear trend",
+        "MAE": 0.8916,
+        "RMSE": 1.0234,
+        "MAPE": 10.8876,
+        "sMAPE": 10.9388,
+        "MASE": 2.7156,
+        "train_time_s": 0.0002,
+        "is_baseline": false
+      },
+      {
+        "model": "Naive",
+        "MAE": 1.0833,
+        "RMSE": 1.4071,
+        "MAPE": 13.0158,
+        "sMAPE": 13.4608,
+        "MASE": 3.3034,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      },
+      {
+        "model": "Drift",
+        "MAE": 1.1229,
+        "RMSE": 1.4643,
+        "MAPE": 13.4839,
+        "sMAPE": 14.0058,
+        "MASE": 3.4252,
+        "train_time_s": 0.0,
+        "is_baseline": true
+      }
+    ],
+    "rank_all_countries": [
+      {
+        "model": "ETS",
+        "mean_rank": 2.625,
+        "median_metric": 0.8008,
+        "mean_train_time_s": 0.0677,
+        "n_series": 16,
+        "is_baseline": false
+      },
+      {
+        "model": "Seasonal naive",
+        "mean_rank": 2.625,
+        "median_metric": 0.6572,
+        "mean_train_time_s": 0.0,
+        "n_series": 16,
+        "is_baseline": true
+      },
+      {
+        "model": "ARIMA",
+        "mean_rank": 3.125,
+        "median_metric": 0.8682,
+        "mean_train_time_s": 5.8584,
+        "n_series": 16,
+        "is_baseline": false
+      },
+      {
+        "model": "Lag LR",
+        "mean_rank": 3.8125,
+        "median_metric": 1.094,
+        "mean_train_time_s": 0.0058,
+        "n_series": 16,
+        "is_baseline": false
+      },
+      {
+        "model": "Lag GBM",
+        "mean_rank": 4.375,
+        "median_metric": 0.9756,
+        "mean_train_time_s": 0.1403,
+        "n_series": 16,
+        "is_baseline": false
+      },
+      {
+        "model": "Linear trend",
+        "mean_rank": 6.0,
+        "median_metric": 1.9896,
+        "mean_train_time_s": 0.0001,
+        "n_series": 16,
+        "is_baseline": false
+      },
+      {
+        "model": "Naive",
+        "mean_rank": 6.5625,
+        "median_metric": 2.2322,
+        "mean_train_time_s": 0.0,
+        "n_series": 16,
+        "is_baseline": true
+      },
+      {
+        "model": "Drift",
+        "mean_rank": 6.875,
+        "median_metric": 2.2728,
+        "mean_train_time_s": 0.0,
+        "n_series": 16,
+        "is_baseline": true
+      }
+    ],
+    "selected_model": "ARIMA",
+    "future_2026_total": 99.86
+  },
+  "db_saved": {
+    "annual": {
+      "model_metrics": 152,
+      "forecast_results": 1216
+    },
+    "monthly": {
+      "model_metrics": 128,
+      "forecast_results": 1536
+    }
+  },
+  "seconds": 139.0
+}

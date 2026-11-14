@@ -1,0 +1,7 @@
+task,approach,mean_ms,min_ms,result_rows
+avg co2_per_capita by country 2010–2024,Pandas,1.84,1.59,204
+avg co2_per_capita by country 2010–2024,SQLite,2.55,2.24,204
+top-10 countries by co2 in 2024,Pandas,1.89,1.69,10
+top-10 countries by co2 in 2024,SQLite,0.48,0.39,10
+YoY change of co2 (LAG vs diff),Pandas,2.4,2.15,7140
+YoY change of co2 (LAG vs diff),SQLite,14.29,14.09,7140

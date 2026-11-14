@@ -1,0 +1,72 @@
+name,continent,co2_per_capita,ratio_to_avg,n_above_avg
+Qatar,Asia,41.27,9.08,71
+Kuwait,Asia,26.25,5.78,71
+Brunei,Asia,26.05,5.73,71
+Bahrain,Asia,24.27,5.34,71
+Trinidad and Tobago,North America,22.93,5.05,71
+Saudi Arabia,Asia,20.38,4.49,71
+United Arab Emirates,Asia,20.13,4.43,71
+New Caledonia,Oceania,18.06,3.98,71
+Oman,Asia,15.65,3.45,71
+Australia,Oceania,14.48,3.19,71
+United States,North America,14.2,3.13,71
+Kazakhstan,Asia,13.94,3.07,71
+Canada,North America,13.42,2.95,71
+Faroe Islands,Europe,13.09,2.88,71
+Mongolia,Asia,12.86,2.83,71
+Curacao,North America,12.34,2.72,71
+Russia,Europe,12.29,2.71,71
+Taiwan,Asia,11.3,2.49,71
+South Korea,Asia,11.29,2.48,71
+Greenland,North America,11.08,2.44,71
+Turkmenistan,Asia,10.81,2.38,71
+Luxembourg,Europe,10.46,2.3,71
+Saint Pierre and Miquelon,North America,9.79,2.15,71
+Iceland,Europe,9.67,2.13,71
+Singapore,Asia,9.24,2.04,71
+Libya,Africa,8.84,1.95,71
+China,Asia,8.66,1.91,71
+Iran,Asia,8.66,1.91,71
+Aruba,North America,8.52,1.88,71
+Bermuda,North America,8.51,1.87,71
+Malaysia,Asia,8.16,1.8,71
+Turks and Caicos Islands,North America,8.14,1.79,71
+Japan,Asia,7.77,1.71,71
+Bahamas,North America,7.65,1.68,71
+Belgium,Europe,7.28,1.6,71
+Antigua and Barbuda,North America,7.09,1.56,71
+Poland,Europe,7.08,1.56,71
+Czechia,Europe,7.04,1.55,71
+South Africa,Africa,6.87,1.51,71
+Germany,Europe,6.77,1.49,71
+Norway,Europe,6.67,1.47,71
+Ireland,Europe,6.34,1.4,71
+Netherlands,Europe,6.3,1.39,71
+Serbia,Europe,6.24,1.37,71
+New Zealand,Oceania,6.23,1.37,71
+Austria,Europe,6.18,1.36,71
+Belarus,Europe,6.16,1.36,71
+Bosnia and Herzegovina,Europe,6.14,1.35,71
+Estonia,Europe,6.11,1.34,71
+Montserrat,North America,6.02,1.33,71
+Slovenia,Europe,6.02,1.32,71
+Turkey,Asia,5.87,1.29,71
+Cook Islands,Oceania,5.82,1.28,71
+Israel,Asia,5.61,1.23,71
+Saint Kitts and Nevis,North America,5.54,1.22,71
+Guyana,South America,5.43,1.19,71
+Cyprus,Europe,5.37,1.18,71
+Greece,Europe,5.31,1.17,71
+Finland,Europe,5.3,1.17,71
+Slovakia,Europe,5.28,1.16,71
+Nauru,Oceania,5.13,1.13,71
+Italy,Europe,5.09,1.12,71
+Iraq,Asia,5.07,1.12,71
+Seychelles,Africa,5.0,1.1,71
+British Virgin Islands,North America,4.87,1.07,71
+Barbados,North America,4.83,1.06,71
+Croatia,Europe,4.76,1.05,71
+Denmark,Europe,4.75,1.04,71
+Suriname,South America,4.71,1.04,71
+Bulgaria,Europe,4.68,1.03,71
+Spain,Europe,4.6,1.01,71

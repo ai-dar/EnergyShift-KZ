@@ -1,0 +1,4 @@
+format,rows,write_s,read_s_mean,size_mb,read_peak_mb,loaded_memory_mb,size_vs_csv
+CSV,2711749,4.101,0.162,134.556,83.05,219.734,1.0
+Parquet (snappy),2711749,0.276,0.065,7.355,0.11,33.634,0.055
+Parquet (gzip),2711749,0.555,0.069,6.531,0.11,33.634,0.049

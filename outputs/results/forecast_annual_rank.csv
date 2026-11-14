@@ -1,0 +1,9 @@
+model,mean_rank,median_metric,mean_train_time_s,n_series,is_baseline
+Lag GBM,3.7368,2.4465,0.1312,19,False
+Seasonal naive,3.8947,2.3935,0.0,19,True
+Naive,3.8947,2.3935,0.0,19,True
+Lag LR,4.1053,2.307,0.0054,19,False
+Drift,4.4211,2.1811,0.0,19,True
+ARIMA,4.4737,2.5869,0.4165,19,False
+ETS,4.5263,1.9696,0.0203,19,False
+Linear trend,5.5263,4.2764,0.0004,19,False

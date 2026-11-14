@@ -1,0 +1,205 @@
+country,start,end,n_obs,n_expected,n_gaps,n_duplicates,regular
+Afghanistan,1990,2024,35,35,0,0,True
+Albania,1990,2024,35,35,0,0,True
+Algeria,1990,2024,35,35,0,0,True
+Angola,1990,2024,35,35,0,0,True
+Antigua and Barbuda,1990,2024,35,35,0,0,True
+Argentina,1990,2024,35,35,0,0,True
+Armenia,1990,2024,35,35,0,0,True
+Aruba,1990,2024,35,35,0,0,True
+Australia,1990,2024,35,35,0,0,True
+Austria,1990,2024,35,35,0,0,True
+Azerbaijan,1990,2024,35,35,0,0,True
+Bahamas,1990,2024,35,35,0,0,True
+Bahrain,1990,2024,35,35,0,0,True
+Bangladesh,1990,2024,35,35,0,0,True
+Barbados,1990,2024,35,35,0,0,True
+Belarus,1990,2024,35,35,0,0,True
+Belgium,1990,2024,35,35,0,0,True
+Belize,1990,2024,35,35,0,0,True
+Benin,1990,2024,35,35,0,0,True
+Bermuda,1990,2024,35,35,0,0,True
+Bhutan,1990,2024,35,35,0,0,True
+Bolivia,1990,2024,35,35,0,0,True
+Bosnia and Herzegovina,1990,2024,35,35,0,0,True
+Botswana,1990,2024,35,35,0,0,True
+Brazil,1990,2024,35,35,0,0,True
+British Virgin Islands,1990,2024,35,35,0,0,True
+Brunei,1990,2024,35,35,0,0,True
+Bulgaria,1990,2024,35,35,0,0,True
+Burkina Faso,1990,2024,35,35,0,0,True
+Burundi,1990,2024,35,35,0,0,True
+Cambodia,1990,2024,35,35,0,0,True
+Cameroon,1990,2024,35,35,0,0,True
+Canada,1990,2024,35,35,0,0,True
+Cape Verde,1990,2024,35,35,0,0,True
+Central African Republic,1990,2024,35,35,0,0,True
+Chad,1990,2024,35,35,0,0,True
+Chile,1990,2024,35,35,0,0,True
+China,1990,2024,35,35,0,0,True
+Colombia,1990,2024,35,35,0,0,True
+Comoros,1990,2024,35,35,0,0,True
+Congo,1990,2024,35,35,0,0,True
+Cook Islands,1990,2024,35,35,0,0,True
+Costa Rica,1990,2024,35,35,0,0,True
+Cote d'Ivoire,1990,2024,35,35,0,0,True
+Croatia,1990,2024,35,35,0,0,True
+Cuba,1990,2024,35,35,0,0,True
+Curacao,1990,2024,35,35,0,0,True
+Cyprus,1990,2024,35,35,0,0,True
+Czechia,1990,2024,35,35,0,0,True
+Democratic Republic of Congo,1990,2024,35,35,0,0,True
+Denmark,1990,2024,35,35,0,0,True
+Djibouti,1990,2024,35,35,0,0,True
+Dominica,1990,2024,35,35,0,0,True
+Dominican Republic,1990,2024,35,35,0,0,True
+East Timor,1990,2024,35,35,0,0,True
+Ecuador,1990,2024,35,35,0,0,True
+Egypt,1990,2024,35,35,0,0,True
+El Salvador,1990,2024,35,35,0,0,True
+Equatorial Guinea,1990,2024,35,35,0,0,True
+Eritrea,1990,2024,35,35,0,0,True
+Estonia,1990,2024,35,35,0,0,True
+Eswatini,1990,2024,35,35,0,0,True
+Ethiopia,1990,2024,35,35,0,0,True
+Faroe Islands,1990,2024,35,35,0,0,True
+Fiji,1990,2024,35,35,0,0,True
+Finland,1990,2024,35,35,0,0,True
+France,1990,2024,35,35,0,0,True
+French Polynesia,1990,2024,35,35,0,0,True
+Gabon,1990,2024,35,35,0,0,True
+Gambia,1990,2024,35,35,0,0,True
+Georgia,1990,2024,35,35,0,0,True
+Germany,1990,2024,35,35,0,0,True
+Ghana,1990,2024,35,35,0,0,True
+Greece,1990,2024,35,35,0,0,True
+Greenland,1990,2024,35,35,0,0,True
+Grenada,1990,2024,35,35,0,0,True
+Guatemala,1990,2024,35,35,0,0,True
+Guinea,1990,2024,35,35,0,0,True
+Guinea-Bissau,1990,2024,35,35,0,0,True
+Guyana,1990,2024,35,35,0,0,True
+Haiti,1990,2024,35,35,0,0,True
+Honduras,1990,2024,35,35,0,0,True
+Hong Kong,1990,2024,35,35,0,0,True
+Hungary,1990,2024,35,35,0,0,True
+Iceland,1990,2024,35,35,0,0,True
+India,1990,2024,35,35,0,0,True
+Indonesia,1990,2024,35,35,0,0,True
+Iran,1990,2024,35,35,0,0,True
+Iraq,1990,2024,35,35,0,0,True
+Ireland,1990,2024,35,35,0,0,True
+Israel,1990,2024,35,35,0,0,True
+Italy,1990,2024,35,35,0,0,True
+Jamaica,1990,2024,35,35,0,0,True
+Japan,1990,2024,35,35,0,0,True
+Jordan,1990,2024,35,35,0,0,True
+Kazakhstan,1990,2024,35,35,0,0,True
+Kenya,1990,2024,35,35,0,0,True
+Kiribati,1990,2024,35,35,0,0,True
+Kuwait,1990,2024,35,35,0,0,True
+Kyrgyzstan,1990,2024,35,35,0,0,True
+Laos,1990,2024,35,35,0,0,True
+Latvia,1990,2024,35,35,0,0,True
+Lebanon,1990,2024,35,35,0,0,True
+Lesotho,1990,2024,35,35,0,0,True
+Liberia,1990,2024,35,35,0,0,True
+Libya,1990,2024,35,35,0,0,True
+Lithuania,1990,2024,35,35,0,0,True
+Luxembourg,1990,2024,35,35,0,0,True
+Macao,1990,2024,35,35,0,0,True
+Madagascar,1990,2024,35,35,0,0,True
+Malawi,1990,2024,35,35,0,0,True
+Malaysia,1990,2024,35,35,0,0,True
+Maldives,1990,2024,35,35,0,0,True
+Mali,1990,2024,35,35,0,0,True
+Malta,1990,2024,35,35,0,0,True
+Mauritania,1990,2024,35,35,0,0,True
+Mauritius,1990,2024,35,35,0,0,True
+Mexico,1990,2024,35,35,0,0,True
+Micronesia (country),1990,2024,35,35,0,0,True
+Moldova,1990,2024,35,35,0,0,True
+Mongolia,1990,2024,35,35,0,0,True
+Montenegro,1990,2024,35,35,0,0,True
+Montserrat,1990,2024,35,35,0,0,True
+Morocco,1990,2024,35,35,0,0,True
+Mozambique,1990,2024,35,35,0,0,True
+Myanmar,1990,2024,35,35,0,0,True
+Namibia,1990,2024,35,35,0,0,True
+Nauru,1990,2024,35,35,0,0,True
+Nepal,1990,2024,35,35,0,0,True
+Netherlands,1990,2024,35,35,0,0,True
+New Caledonia,1990,2024,35,35,0,0,True
+New Zealand,1990,2024,35,35,0,0,True
+Nicaragua,1990,2024,35,35,0,0,True
+Niger,1990,2024,35,35,0,0,True
+Nigeria,1990,2024,35,35,0,0,True
+Niue,1990,2024,35,35,0,0,True
+North Korea,1990,2024,35,35,0,0,True
+North Macedonia,1990,2024,35,35,0,0,True
+Norway,1990,2024,35,35,0,0,True
+Oman,1990,2024,35,35,0,0,True
+Pakistan,1990,2024,35,35,0,0,True
+Palestine,1990,2024,35,35,0,0,True
+Panama,1990,2024,35,35,0,0,True
+Papua New Guinea,1990,2024,35,35,0,0,True
+Paraguay,1990,2024,35,35,0,0,True
+Peru,1990,2024,35,35,0,0,True
+Philippines,1990,2024,35,35,0,0,True
+Poland,1990,2024,35,35,0,0,True
+Portugal,1990,2024,35,35,0,0,True
+Qatar,1990,2024,35,35,0,0,True
+Romania,1990,2024,35,35,0,0,True
+Russia,1990,2024,35,35,0,0,True
+Rwanda,1990,2024,35,35,0,0,True
+Saint Helena,1990,2024,35,35,0,0,True
+Saint Kitts and Nevis,1990,2024,35,35,0,0,True
+Saint Lucia,1990,2024,35,35,0,0,True
+Saint Pierre and Miquelon,1990,2024,35,35,0,0,True
+Saint Vincent and the Grenadines,1990,2024,35,35,0,0,True
+Samoa,1990,2024,35,35,0,0,True
+Sao Tome and Principe,1990,2024,35,35,0,0,True
+Saudi Arabia,1990,2024,35,35,0,0,True
+Senegal,1990,2024,35,35,0,0,True
+Serbia,1990,2024,35,35,0,0,True
+Seychelles,1990,2024,35,35,0,0,True
+Sierra Leone,1990,2024,35,35,0,0,True
+Singapore,1990,2024,35,35,0,0,True
+Slovakia,1990,2024,35,35,0,0,True
+Slovenia,1990,2024,35,35,0,0,True
+Solomon Islands,1990,2024,35,35,0,0,True
+Somalia,1990,2024,35,35,0,0,True
+South Africa,1990,2024,35,35,0,0,True
+South Korea,1990,2024,35,35,0,0,True
+Spain,1990,2024,35,35,0,0,True
+Sri Lanka,1990,2024,35,35,0,0,True
+Sudan,1990,2024,35,35,0,0,True
+Suriname,1990,2024,35,35,0,0,True
+Sweden,1990,2024,35,35,0,0,True
+Switzerland,1990,2024,35,35,0,0,True
+Syria,1990,2024,35,35,0,0,True
+Taiwan,1990,2024,35,35,0,0,True
+Tajikistan,1990,2024,35,35,0,0,True
+Tanzania,1990,2024,35,35,0,0,True
+Thailand,1990,2024,35,35,0,0,True
+Togo,1990,2024,35,35,0,0,True
+Tonga,1990,2024,35,35,0,0,True
+Trinidad and Tobago,1990,2024,35,35,0,0,True
+Tunisia,1990,2024,35,35,0,0,True
+Turkey,1990,2024,35,35,0,0,True
+Turkmenistan,1990,2024,35,35,0,0,True
+Turks and Caicos Islands,1990,2024,35,35,0,0,True
+Tuvalu,1990,2024,35,35,0,0,True
+Uganda,1990,2024,35,35,0,0,True
+Ukraine,1990,2024,35,35,0,0,True
+United Arab Emirates,1990,2024,35,35,0,0,True
+United Kingdom,1990,2024,35,35,0,0,True
+United States,1990,2024,35,35,0,0,True
+Uruguay,1990,2024,35,35,0,0,True
+Uzbekistan,1990,2024,35,35,0,0,True
+Vanuatu,1990,2024,35,35,0,0,True
+Venezuela,1990,2024,35,35,0,0,True
+Vietnam,1990,2024,35,35,0,0,True
+Yemen,1990,2024,35,35,0,0,True
+Zambia,1990,2024,35,35,0,0,True
+Zimbabwe,1990,2024,35,35,0,0,True

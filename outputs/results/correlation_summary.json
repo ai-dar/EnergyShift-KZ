@@ -1,0 +1,250 @@
+{
+  "country": "Kazakhstan",
+  "cross_section_year": 2022,
+  "co2_levels": {
+    "co2": 1.0,
+    "co2_per_capita": 0.962,
+    "gdp": 0.842,
+    "gdp_per_capita": 0.826,
+    "population": 0.8,
+    "primary_energy_consumption": 0.825,
+    "energy_per_capita": 0.735,
+    "fossil_share_energy": 0.449,
+    "low_carbon_share_energy": -0.449,
+    "coal_share_energy": -0.435,
+    "carbon_intensity_elec": 0.683,
+    "oil_price": 0.572,
+    "temperature_anomaly": 0.661
+  },
+  "co2_differences": {
+    "co2": 1.0,
+    "co2_per_capita": 0.99,
+    "gdp": 0.512,
+    "gdp_per_capita": 0.497,
+    "population": 0.341,
+    "primary_energy_consumption": 0.291,
+    "energy_per_capita": 0.276,
+    "fossil_share_energy": 0.093,
+    "low_carbon_share_energy": -0.093,
+    "coal_share_energy": -0.044,
+    "carbon_intensity_elec": -0.0,
+    "oil_price": 0.091,
+    "temperature_anomaly": 0.236
+  },
+  "external_kazakhstan": [
+    {
+      "factor": "oil_price",
+      "lag": 0,
+      "n": 34,
+      "pearson": 0.166,
+      "spearman": 0.252
+    },
+    {
+      "factor": "oil_price",
+      "lag": 1,
+      "n": 33,
+      "pearson": 0.313,
+      "spearman": 0.299
+    },
+    {
+      "factor": "oil_price",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.074,
+      "spearman": 0.096
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 0,
+      "n": 34,
+      "pearson": 0.244,
+      "spearman": 0.109
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 1,
+      "n": 33,
+      "pearson": -0.098,
+      "spearman": -0.047
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.119,
+      "spearman": 0.087
+    },
+    {
+      "factor": "gdp",
+      "lag": 0,
+      "n": 32,
+      "pearson": 0.571,
+      "spearman": 0.6
+    },
+    {
+      "factor": "gdp",
+      "lag": 1,
+      "n": 32,
+      "pearson": 0.591,
+      "spearman": 0.564
+    },
+    {
+      "factor": "gdp",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.416,
+      "spearman": 0.415
+    },
+    {
+      "factor": "population",
+      "lag": 0,
+      "n": 34,
+      "pearson": 0.4,
+      "spearman": 0.343
+    },
+    {
+      "factor": "population",
+      "lag": 1,
+      "n": 33,
+      "pearson": 0.279,
+      "spearman": 0.205
+    },
+    {
+      "factor": "population",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.143,
+      "spearman": 0.048
+    }
+  ],
+  "external_world": [
+    {
+      "factor": "oil_price",
+      "lag": 0,
+      "n": 34,
+      "pearson": 0.702,
+      "spearman": 0.791
+    },
+    {
+      "factor": "oil_price",
+      "lag": 1,
+      "n": 33,
+      "pearson": 0.044,
+      "spearman": 0.091
+    },
+    {
+      "factor": "oil_price",
+      "lag": 2,
+      "n": 32,
+      "pearson": -0.167,
+      "spearman": -0.21
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 0,
+      "n": 34,
+      "pearson": -0.175,
+      "spearman": -0.42
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 1,
+      "n": 33,
+      "pearson": 0.032,
+      "spearman": 0.066
+    },
+    {
+      "factor": "temperature_anomaly",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.298,
+      "spearman": 0.372
+    },
+    {
+      "factor": "gdp",
+      "lag": 0,
+      "n": 7,
+      "pearson": 0.978,
+      "spearman": 0.75
+    },
+    {
+      "factor": "gdp",
+      "lag": 1,
+      "n": 7,
+      "pearson": -0.355,
+      "spearman": 0.107
+    },
+    {
+      "factor": "gdp",
+      "lag": 2,
+      "n": 7,
+      "pearson": -0.147,
+      "spearman": -0.536
+    },
+    {
+      "factor": "population",
+      "lag": 0,
+      "n": 34,
+      "pearson": -0.01,
+      "spearman": 0.018
+    },
+    {
+      "factor": "population",
+      "lag": 1,
+      "n": 33,
+      "pearson": -0.072,
+      "spearman": 0.04
+    },
+    {
+      "factor": "population",
+      "lag": 2,
+      "n": 32,
+      "pearson": 0.074,
+      "spearman": 0.157
+    }
+  ],
+  "energy_mix_vs_emissions": [
+    {
+      "year": 2022,
+      "variable": "fossil_share_energy",
+      "n_countries": 79,
+      "pearson": 0.278,
+      "spearman": 0.263
+    },
+    {
+      "year": 2022,
+      "variable": "coal_share_energy",
+      "n_countries": 79,
+      "pearson": -0.122,
+      "spearman": -0.1
+    },
+    {
+      "year": 2022,
+      "variable": "low_carbon_share_energy",
+      "n_countries": 79,
+      "pearson": -0.278,
+      "spearman": -0.263
+    },
+    {
+      "year": 2022,
+      "variable": "energy_per_capita",
+      "n_countries": 79,
+      "pearson": 0.817,
+      "spearman": 0.897
+    },
+    {
+      "year": 2022,
+      "variable": "gdp_per_capita",
+      "n_countries": 79,
+      "pearson": 0.642,
+      "spearman": 0.654
+    },
+    {
+      "year": 2022,
+      "variable": "carbon_intensity_elec",
+      "n_countries": 79,
+      "pearson": 0.255,
+      "spearman": 0.167
+    }
+  ]
+}

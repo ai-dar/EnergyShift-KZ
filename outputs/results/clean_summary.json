@@ -1,0 +1,51 @@
+{
+  "panel": {
+    "rows": 7140,
+    "columns": 49,
+    "countries": 204,
+    "years": [
+      1990,
+      2024
+    ],
+    "memory_mb": 2.75,
+    "missing_pct_total": 28.29
+  },
+  "monthly": {
+    "rows": 112517,
+    "countries": 88,
+    "start": "2018-01-01",
+    "end": "2025-12-01"
+  },
+  "long_format": {
+    "rows": 2711749,
+    "memory_mb": 33.635,
+    "parquet_mb": 7.355,
+    "chunk_stats": [
+      {
+        "label": "chunked read owid-energy-data.csv",
+        "seconds": 3.4404,
+        "peak_mb": 52.39,
+        "chunks": 5,
+        "rows": 977766,
+        "chunksize": 5000,
+        "memory_mb": 11.202
+      },
+      {
+        "label": "chunked read owid-co2-data.csv",
+        "seconds": 3.6628,
+        "peak_mb": 92.848,
+        "chunks": 11,
+        "rows": 1733983,
+        "chunksize": 5000,
+        "memory_mb": 18.199
+      }
+    ]
+  },
+  "processed_files": {
+    "panel": "/home/aidar/AITU/PA-FINAL/data/processed/panel_annual.parquet",
+    "monthly": "/home/aidar/AITU/PA-FINAL/data/processed/electricity_monthly.parquet",
+    "factors": "/home/aidar/AITU/PA-FINAL/data/processed/external_factors.parquet",
+    "countries": "/home/aidar/AITU/PA-FINAL/data/processed/countries.parquet"
+  },
+  "seconds": 9.7
+}

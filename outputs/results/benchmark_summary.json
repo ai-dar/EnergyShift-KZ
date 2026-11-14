@@ -1,0 +1,108 @@
+{
+  "formats": [
+    {
+      "format": "CSV",
+      "rows": 2711749,
+      "write_s": 4.101,
+      "read_s_mean": 0.162,
+      "size_mb": 134.556,
+      "read_peak_mb": 83.05,
+      "loaded_memory_mb": 219.734,
+      "size_vs_csv": 1.0
+    },
+    {
+      "format": "Parquet (snappy)",
+      "rows": 2711749,
+      "write_s": 0.276,
+      "read_s_mean": 0.065,
+      "size_mb": 7.355,
+      "read_peak_mb": 0.11,
+      "loaded_memory_mb": 33.634,
+      "size_vs_csv": 0.055
+    },
+    {
+      "format": "Parquet (gzip)",
+      "rows": 2711749,
+      "write_s": 0.555,
+      "read_s_mean": 0.069,
+      "size_mb": 6.531,
+      "read_peak_mb": 0.11,
+      "loaded_memory_mb": 33.634,
+      "size_vs_csv": 0.049
+    }
+  ],
+  "dtypes": [
+    {
+      "variant": "исходные типы",
+      "memory_mb": 23.478,
+      "optimize_s": NaN,
+      "saving_pct": NaN
+    },
+    {
+      "variant": "оптимизированные типы",
+      "memory_mb": 11.468,
+      "optimize_s": 0.031,
+      "saving_pct": 51.2
+    }
+  ],
+  "chunked": [
+    {
+      "approach": "read_csv целиком",
+      "seconds": 0.3365,
+      "peak_mb": 59.82,
+      "memory_mb": 31.002,
+      "rows": 50411
+    },
+    {
+      "approach": "чанки по 5000 + оптимизация типов",
+      "seconds": 3.3612,
+      "peak_mb": 60.445,
+      "memory_mb": 14.91,
+      "rows": 50411
+    }
+  ],
+  "pandas_vs_sql": [
+    {
+      "task": "avg co2_per_capita by country 2010–2024",
+      "approach": "Pandas",
+      "mean_ms": 1.84,
+      "min_ms": 1.59,
+      "result_rows": 204
+    },
+    {
+      "task": "avg co2_per_capita by country 2010–2024",
+      "approach": "SQLite",
+      "mean_ms": 2.55,
+      "min_ms": 2.24,
+      "result_rows": 204
+    },
+    {
+      "task": "top-10 countries by co2 in 2024",
+      "approach": "Pandas",
+      "mean_ms": 1.89,
+      "min_ms": 1.69,
+      "result_rows": 10
+    },
+    {
+      "task": "top-10 countries by co2 in 2024",
+      "approach": "SQLite",
+      "mean_ms": 0.48,
+      "min_ms": 0.39,
+      "result_rows": 10
+    },
+    {
+      "task": "YoY change of co2 (LAG vs diff)",
+      "approach": "Pandas",
+      "mean_ms": 2.4,
+      "min_ms": 2.15,
+      "result_rows": 7140
+    },
+    {
+      "task": "YoY change of co2 (LAG vs diff)",
+      "approach": "SQLite",
+      "mean_ms": 14.29,
+      "min_ms": 14.09,
+      "result_rows": 7140
+    }
+  ]
+}

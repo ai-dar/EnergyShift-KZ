@@ -1,0 +1,71 @@
+{
+  "annual": {
+    "name": "co2",
+    "n": 35,
+    "start": "1990-01-01",
+    "end": "2024-01-01",
+    "freq": "YS-JAN",
+    "level_n": 35,
+    "level_adf_stat": -2.2043,
+    "level_adf_pvalue": 0.2047,
+    "level_adf_lags": 10,
+    "level_kpss_stat": 0.501,
+    "level_kpss_pvalue": 0.0414,
+    "level_adf_stationary": false,
+    "level_kpss_stationary": false,
+    "level_verdict": "нестационарен (нужно дифференцирование)",
+    "diff1_adf_pvalue": 0.3682,
+    "diff1_kpss_pvalue": 0.1,
+    "diff1_verdict": "недостаточно данных для уверенного вывода",
+    "seasonal_strength": 0.457,
+    "trend_strength": 0.971,
+    "stl_period": 5
+  },
+  "monthly": {
+    "name": "emissions_mtco2",
+    "n": 96,
+    "start": "2018-01-01",
+    "end": "2025-12-01",
+    "freq": "MS",
+    "level_n": 96,
+    "level_adf_stat": 0.6702,
+    "level_adf_pvalue": 0.9892,
+    "level_adf_lags": 11,
+    "level_kpss_stat": 0.256,
+    "level_kpss_pvalue": 0.1,
+    "level_adf_stationary": false,
+    "level_kpss_stationary": true,
+    "level_verdict": "недостаточно данных для уверенного вывода",
+    "diff1_adf_pvalue": 0.0037,
+    "diff1_kpss_pvalue": 0.1,
+    "diff1_verdict": "стационарен",
+    "seasonal_strength": 0.943,
+    "trend_strength": 0.644,
+    "stl_period": 12
+  },
+  "annual_5y_means": {
+    "1990": 228.7,
+    "1995": 147.0,
+    "2000": 159.5,
+    "2005": 218.6,
+    "2010": 256.8,
+    "2015": 309.6,
+    "2020": 274.8
+  },
+  "monthly_yearly_sums": {
+    "2018": 89.73,
+    "2019": 88.88,
+    "2020": 90.26,
+    "2021": 95.07,
+    "2022": 93.82,
+    "2023": 92.95,
+    "2024": 94.91,
+    "2025": 99.57
+  },
+  "monthly_quarterly_last": {
+    "2025-01-01": 27.9,
+    "2025-04-01": 22.26,
+    "2025-07-01": 21.89,
+    "2025-10-01": 27.52
+  }
+}

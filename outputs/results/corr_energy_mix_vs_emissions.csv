@@ -1,0 +1,7 @@
+year,variable,n_countries,pearson,spearman
+2022,fossil_share_energy,79,0.278,0.263
+2022,coal_share_energy,79,-0.122,-0.1
+2022,low_carbon_share_energy,79,-0.278,-0.263
+2022,energy_per_capita,79,0.817,0.897
+2022,gdp_per_capita,79,0.642,0.654
+2022,carbon_intensity_elec,79,0.255,0.167

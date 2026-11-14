@@ -1,0 +1,7 @@
+continent,n_countries_full_coverage,examples
+Europe,34,"Austria, Belarus, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Kingdom"
+Asia,28,"Azerbaijan, Bangladesh, China, Hong Kong, India, Indonesia, Iran, Iraq, Israel, Japan, Kazakhstan, Kuwait, Malaysia, Oman, Pakistan, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Taiwan, Thailand, Turkey, Turkmenistan, United Arab Emirates, Uzbekistan, Vietnam"
+South America,7,"Argentina, Brazil, Chile, Colombia, Ecuador, Peru, Venezuela"
+North America,4,"Canada, Mexico, Trinidad and Tobago, United States"
+Africa,4,"Algeria, Egypt, Morocco, South Africa"
+Oceania,2,"Australia, New Zealand"

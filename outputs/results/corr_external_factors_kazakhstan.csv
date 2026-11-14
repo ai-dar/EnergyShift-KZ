@@ -1,0 +1,13 @@
+factor,lag,n,pearson,spearman,series
+oil_price,0,34,0.166,0.252,Kazakhstan
+oil_price,1,33,0.313,0.299,Kazakhstan
+oil_price,2,32,0.074,0.096,Kazakhstan
+temperature_anomaly,0,34,0.244,0.109,Kazakhstan
+temperature_anomaly,1,33,-0.098,-0.047,Kazakhstan
+temperature_anomaly,2,32,0.119,0.087,Kazakhstan
+gdp,0,32,0.571,0.6,Kazakhstan
+gdp,1,32,0.591,0.564,Kazakhstan
+gdp,2,32,0.416,0.415,Kazakhstan
+population,0,34,0.4,0.343,Kazakhstan
+population,1,33,0.279,0.205,Kazakhstan
+population,2,32,0.143,0.048,Kazakhstan
