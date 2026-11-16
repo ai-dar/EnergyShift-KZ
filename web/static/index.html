@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EnergyShift KZ</title>
+  <meta name="description" content="Энергобаланс и выбросы CO₂ 204 стран в 3D: Казахстан на карте мирового энергоперехода.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23130b2e'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23f58a2c'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%231cc8e4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="/" aria-label="EnergyShift KZ, в начало">EnergyShift <span>KZ</span></a>
+    <nav class="views" role="tablist" aria-label="Разделы">
+      <button role="tab" data-view="globe" aria-selected="true">Глобус</button>
+      <button role="tab" data-view="mix" aria-selected="false">Энергобаланс</button>
+      <button role="tab" data-view="seasons" aria-selected="false">Сезоны</button>
+      <button role="tab" data-view="forecast" aria-selected="false">Прогноз</button>
+      <button role="tab" data-view="sql" aria-selected="false">SQL</button>
+    </nav>
+    <form class="search" id="search" autocomplete="off">
+      <label for="search-input" class="visually-hidden">Найти страну</label>
+      <input id="search-input" list="country-list" placeholder="Найти страну" spellcheck="false">
+      <datalist id="country-list"></datalist>
+      <button type="button" id="back-home" hidden>Вернуться к Казахстану</button>
+    </form>
+  </header>
+
+  <main class="shell">
+    <aside class="lede" aria-live="polite">
+      <p class="lede-year" id="lede-year"></p>
+      <h1 id="lede-name"></h1>
+      <ul class="facts" id="lede-facts"></ul>
+      <p class="lede-compare" id="lede-compare"></p>
+      <p class="lede-hint" id="lede-hint"></p>
+    </aside>
+
+    <div class="stage">
+      <section class="view is-active" id="view-globe" role="tabpanel" aria-label="Глобус">
+        <div id="globe" class="canvas-host"></div>
+        <div class="tools">
+          <fieldset class="metric-picker">
+            <legend>Высота и цвет столбика</legend>
+            <div id="metric-options"></div>
+          </fieldset>
+          <div class="scale" aria-hidden="true">
+            <div class="scale-bar"></div>
+            <div class="scale-ends"><span id="scale-min">0</span><span id="scale-max"></span></div>
+          </div>
+          <fieldset class="group-picker">
+            <legend>С кем сравнить Казахстан</legend>
+            <div id="group-options"></div>
+          </fieldset>
+          <p class="readout" id="readout">Наведите на страну. Нажмите, чтобы выбрать её.</p>
+        </div>
+      </section>
+
+      <section class="view" id="view-mix" role="tabpanel" aria-label="Энергобаланс" hidden>
+        <div id="skyline" class="canvas-host"></div>
+        <div class="tools">
+          <fieldset class="mode-picker">
+            <legend>Что показывает высота</legend>
+            <div id="mix-mode"></div>
+          </fieldset>
+          <ul class="source-legend" id="source-legend"></ul>
+          <p class="readout" id="mix-readout">Наведите на блок, чтобы увидеть год, источник и значение. Сцену можно вращать.</p>
+        </div>
+      </section>
+
+      <section class="view" id="view-seasons" role="tabpanel" aria-label="Сезоны" hidden>
+        <div id="spiral" class="canvas-host"></div>
+        <div class="tools">
+          <p class="note" id="spiral-note"></p>
+          <div class="scale" aria-hidden="true">
+            <div class="scale-bar"></div>
+            <div class="scale-ends"><span id="spiral-min"></span><span id="spiral-max"></span></div>
+          </div>
+          <p class="key-line"><span class="swatch swatch-sky"></span>Прогноз на 12 месяцев</p>
+          <p class="readout" id="spiral-readout">Наведите на точку, чтобы увидеть месяц и выбросы. Сцену можно вращать.</p>
+        </div>
+      </section>
+
+      <section class="view view-flat" id="view-forecast" role="tabpanel" aria-label="Прогноз" hidden>
+        <div class="flat-head">
+          <h2 id="forecast-title"></h2>
+          <div class="segmented" id="forecast-freq" role="group" aria-label="Частота данных"></div>
+        </div>
+        <p class="verdict" id="forecast-verdict"></p>
+        <div class="forecast-grid">
+          <div class="chart-wrap"><svg id="forecast-chart" role="img" aria-label="Факт и прогнозы моделей"></svg><div class="chart-tip" id="forecast-tip" hidden></div></div>
+          <div class="models">
+            <table id="forecast-table">
+              <thead><tr><th>Модель</th><th class="num">MAPE, %</th><th class="num">MASE</th><th class="num">Время, с</th></tr></thead>
+              <tbody></tbody>
+            </table>
+            <p class="note">Проверка на последних периодах, которых модель не видела. MASE меньше 1 значит точнее наивного прогноза на обучении. Нажмите на модель, чтобы скрыть или показать её линию.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="view view-flat" id="view-sql" role="tabpanel" aria-label="SQL" hidden>
+        <div class="sql-grid">
+          <ol class="sql-list" id="sql-list"></ol>
+          <div class="sql-result">
+            <h2 id="sql-title"></h2>
+            <pre id="sql-code"></pre>
+            <p class="note" id="sql-count"></p>
+            <div class="table-scroll"><table id="sql-table"><thead></thead><tbody></tbody></table></div>
+          </div>
+        </div>
+      </section>
+
+      <p class="stage-error" id="stage-error" hidden></p>
+    </div>
+  </main>
+
+  <footer class="timeline" id="timeline">
+    <button id="play" type="button" aria-label="Проиграть годы">Проиграть</button>
+    <div class="track" id="track" role="slider" tabindex="0" aria-label="Год" aria-valuemin="1990" aria-valuemax="2024" aria-valuenow="2024">
+      <svg id="track-svg" preserveAspectRatio="none"></svg>
+      <div class="handle" id="handle"><span id="handle-year">2024</span></div>
+    </div>
+    <p class="track-caption" id="track-caption"></p>
+  </footer>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/OrbitControls.js"></script>
+  <script src="vendor/globe.gl.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

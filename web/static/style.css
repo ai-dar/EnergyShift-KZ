@@ -1,0 +1,200 @@
+/* EnergyShift KZ — «Земля в тепловизоре».
+   Основа: ночной индиго. Данные: тепловая шкала от фиолетового к раскалённому жёлтому.
+   Казахстан: бирюза флага — единственный холодный цвет на горячей карте. */
+
+@font-face {
+  font-family: "Geologica";
+  src: url("vendor/fonts/geologica-cyrillic.woff2") format("woff2");
+  font-weight: 300 800; font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Geologica";
+  src: url("vendor/fonts/geologica-latin.woff2") format("woff2");
+  font-weight: 300 800; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+2080-2089, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --indigo: #130b2e;
+  --plum: #1e1244;
+  --plum-lift: #2a1a5c;
+  --rule: #3a2a70;
+  --paper: #f4efe8;
+  --lilac: #b0a3d1;
+  --sky: #1cc8e4;
+  --heat-1: #43208a; --heat-2: #8a2a86; --heat-3: #d1495b; --heat-4: #f58a2c; --heat-5: #ffe28a;
+  --heat: linear-gradient(90deg, var(--heat-1), var(--heat-2), var(--heat-3), var(--heat-4), var(--heat-5));
+  --bar-h: 60px;
+  --timeline-h: 128px;
+  --lede-w: clamp(280px, 25vw, 380px);
+  --step--1: 0.8125rem; --step-0: 0.9375rem; --step-1: 1.125rem; --step-2: 1.5rem; --step-3: 2.25rem; --step-4: 3.375rem;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: "Geologica", "Segoe UI", system-ui, sans-serif;
+  font-size: var(--step-0); line-height: 1.5; font-weight: 350;
+  color: var(--paper);
+  background: radial-gradient(120% 90% at 62% 42%, #24135a 0%, var(--indigo) 58%, #0c0720 100%) fixed;
+  display: grid; grid-template-rows: var(--bar-h) minmax(0, 1fr) var(--timeline-h);
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+}
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--sky); outline-offset: 3px; border-radius: 4px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+h1, h2, p, ul, ol, fieldset { margin: 0; padding: 0; }
+fieldset { border: 0; min-width: 0; }
+ul, ol { list-style: none; }
+
+/* --- Верхняя панель -------------------------------------------------------- */
+.bar { display: flex; align-items: center; gap: 28px; padding: 0 28px; border-bottom: 1px solid var(--rule); }
+.brand { font-weight: 750; font-size: var(--step-1); letter-spacing: -0.01em; color: var(--paper); text-decoration: none; white-space: nowrap; }
+.brand span { color: var(--sky); }
+.views { display: flex; gap: 4px; height: 100%; }
+.views button {
+  background: none; border: 0; padding: 0 14px; height: 100%; color: var(--lilac);
+  border-bottom: 3px solid transparent; border-top: 3px solid transparent; font-weight: 450;
+}
+.views button:hover { color: var(--paper); }
+.views button[aria-selected="true"] { color: var(--paper); border-bottom-color: var(--heat-4); }
+.search { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+.search input {
+  width: 190px; padding: 7px 12px; background: var(--plum); border: 1px solid var(--rule); border-radius: 6px;
+}
+.search input::placeholder { color: var(--lilac); }
+#back-home { background: none; border: 1px solid var(--sky); color: var(--sky); border-radius: 6px; padding: 7px 12px; white-space: nowrap; }
+#back-home:hover { background: var(--sky); color: var(--indigo); }
+
+/* --- Каркас ----------------------------------------------------------------- */
+.shell { display: grid; grid-template-columns: var(--lede-w) minmax(0, 1fr); min-height: 0; }
+.lede { padding: 30px 26px 20px 28px; overflow-y: auto; display: flex; flex-direction: column; gap: 14px; }
+.lede-year { color: var(--lilac); font-size: var(--step-1); font-weight: 500; }
+.lede h1 { font-size: var(--step-4); line-height: 0.98; font-weight: 800; letter-spacing: -0.035em; overflow-wrap: anywhere; }
+.lede h1.is-long { font-size: var(--step-3); letter-spacing: -0.02em; }
+.facts { display: flex; flex-direction: column; margin-top: 6px; }
+.facts li { padding: 11px 0; border-top: 1px solid var(--rule); display: grid; gap: 1px; }
+.facts b { font-size: var(--step-2); font-weight: 700; letter-spacing: -0.015em; line-height: 1.15; }
+.facts b small { font-size: var(--step-0); font-weight: 450; color: var(--lilac); letter-spacing: 0; }
+.facts span { color: var(--lilac); font-size: var(--step--1); }
+.facts li.is-current b { color: var(--heat-5); }
+.lede-compare { color: var(--sky); font-weight: 500; }
+.lede-compare:empty { display: none; }
+.lede-hint { color: var(--lilac); font-size: var(--step--1); margin-top: auto; max-width: 34ch; }
+
+.stage { position: relative; min-width: 0; min-height: 0; }
+.view { position: absolute; inset: 0; }
+.view[hidden] { display: none; }
+.canvas-host { position: absolute; inset: 0; }
+.canvas-host canvas { display: block; }
+#skyline, #spiral { right: 290px; }   /* справа остаётся место для легенды */
+.stage-error { position: absolute; left: 24px; bottom: 20px; right: 24px; padding: 12px 16px; background: #4a1230; border: 1px solid var(--heat-3); border-radius: 8px; }
+
+/* --- Инструменты поверх сцены ------------------------------------------------ */
+.tools { position: absolute; top: 22px; right: 26px; width: 250px; display: flex; flex-direction: column; gap: 18px; pointer-events: none; }
+.tools > * { pointer-events: auto; }
+.tools legend, .note, .key-line { color: var(--lilac); font-size: var(--step--1); }
+.tools legend { margin-bottom: 6px; }
+.choice { display: block; width: 100%; text-align: left; background: none; border: 0; padding: 5px 0 5px 14px; border-left: 2px solid var(--rule); color: var(--lilac); }
+.choice:hover { color: var(--paper); }
+.choice[aria-pressed="true"] { color: var(--paper); border-left-color: var(--heat-4); font-weight: 600; }
+.group-picker .choice[aria-pressed="true"] { border-left-color: var(--sky); }
+.scale-bar { height: 8px; border-radius: 4px; background: var(--heat); }
+.scale-ends { display: flex; justify-content: space-between; color: var(--lilac); font-size: var(--step--1); margin-top: 4px; }
+.readout { min-height: 4.5em; font-size: var(--step--1); color: var(--lilac); }
+.readout b { display: block; color: var(--paper); font-size: var(--step-1); font-weight: 650; }
+.source-legend { display: grid; gap: 5px; font-size: var(--step--1); }
+.source-legend li { display: flex; align-items: center; gap: 8px; }
+.swatch { width: 12px; height: 12px; border-radius: 2px; flex: none; display: inline-block; }
+.swatch-sky { background: var(--sky); margin-right: 8px; vertical-align: -1px; }
+.scene-label { position: absolute; transform: translate(-50%, -50%); font-size: 12px; color: var(--lilac); pointer-events: none; white-space: nowrap; }
+.scene-label.is-strong { color: var(--paper); font-weight: 600; }
+.scene-label.is-sky { color: var(--sky); font-weight: 600; }
+.globe-tag { font: 600 12px "Geologica", sans-serif; color: var(--indigo); background: var(--sky); padding: 2px 7px; border-radius: 3px; white-space: nowrap; transform: translate(-50%, -140%); pointer-events: none; }
+.globe-tag.is-selected { background: var(--paper); }
+
+/* --- Плоские разделы: прогноз и SQL -------------------------------------------- */
+.view-flat { padding: 26px 30px 18px 10px; overflow: auto; display: flex; flex-direction: column; gap: 14px; }
+.view-flat[hidden] { display: none; }
+.flat-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; flex-wrap: wrap; }
+.view-flat h2 { font-size: var(--step-2); font-weight: 700; letter-spacing: -0.015em; line-height: 1.2; }
+.verdict { font-size: var(--step-1); max-width: 62ch; }
+.verdict b { color: var(--heat-5); font-weight: 650; }
+.segmented { display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.segmented button { background: none; border: 0; padding: 6px 14px; color: var(--lilac); }
+.segmented button[aria-pressed="true"] { background: var(--plum-lift); color: var(--paper); font-weight: 600; }
+.segmented button:disabled { opacity: 0.45; cursor: not-allowed; }
+.forecast-grid { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 26px; min-height: 0; flex: 1; }
+.chart-wrap { position: relative; min-height: 300px; }
+#forecast-chart { position: absolute; inset: 0; width: 100%; height: 100%; }
+.chart-tip { position: absolute; background: var(--plum); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 10px; font-size: var(--step--1); pointer-events: none; min-width: 150px; }
+.chart-tip b { display: block; margin-bottom: 3px; }
+.chart-tip div { display: flex; justify-content: space-between; gap: 14px; }
+table { border-collapse: collapse; width: 100%; font-size: var(--step--1); }
+th { text-align: left; color: var(--lilac); font-weight: 450; padding: 6px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+td { padding: 6px 8px; border-bottom: 1px solid #2a1d55; }
+.num { text-align: right; }
+#forecast-table tbody tr { cursor: pointer; }
+#forecast-table tbody tr:hover td { background: var(--plum); }
+#forecast-table tr.is-off td { opacity: 0.4; }
+#forecast-table .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; }
+#forecast-table em { font-style: normal; color: var(--lilac); margin-left: 6px; }
+.models { display: flex; flex-direction: column; gap: 12px; }
+.sql-grid { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 28px; min-height: 0; flex: 1; }
+.sql-list { overflow: auto; counter-reset: q; }
+.sql-list button { display: block; width: 100%; text-align: left; background: none; border: 0; border-left: 2px solid var(--rule); padding: 7px 0 7px 14px; color: var(--lilac); font-size: var(--step--1); }
+.sql-list button:hover { color: var(--paper); }
+.sql-list button[aria-pressed="true"] { color: var(--paper); border-left-color: var(--heat-4); }
+.sql-result { display: flex; flex-direction: column; gap: 10px; min-width: 0; min-height: 0; }
+.sql-result h2 { font-size: var(--step-1); }
+pre { margin: 0; padding: 12px 14px; background: #0e0825; border: 1px solid var(--rule); border-radius: 8px; overflow: auto; max-height: 30vh; font: 12.5px/1.5 ui-monospace, "Cascadia Code", Menlo, monospace; color: #d9d0f2; }
+.table-scroll { overflow: auto; flex: 1; min-height: 120px; }
+.table-scroll thead th { position: sticky; top: 0; background: var(--indigo); }
+
+/* --- Шкала времени: кривая выбросов вместо ползунка ---------------------------- */
+.timeline { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; column-gap: 20px; padding: 10px 28px 10px; border-top: 1px solid var(--rule); background: rgba(12, 7, 32, 0.55); }
+#play { grid-row: 1 / 3; align-self: center; background: var(--plum-lift); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 16px; min-width: 116px; }
+#play:hover { border-color: var(--heat-4); }
+.track { position: relative; cursor: ew-resize; touch-action: none; min-height: 0; }
+#track-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.handle { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--paper); pointer-events: none; }
+.handle span { position: absolute; top: -2px; left: 8px; font-size: var(--step-1); font-weight: 750; letter-spacing: -0.01em; text-shadow: 0 0 8px var(--indigo); }
+.handle.is-flipped span { left: auto; right: 8px; }
+.track-caption { grid-column: 2; color: var(--lilac); font-size: var(--step--1); display: flex; justify-content: space-between; gap: 12px; padding-top: 3px; }
+.timeline.is-idle .track, .timeline.is-idle #play { opacity: 0.35; pointer-events: none; }
+
+/* --- Узкие экраны: страница прокручивается, сцена и её настройки идут друг за другом --- */
+@media (max-width: 900px) {
+  :root { --timeline-h: 104px; }
+  html, body { height: auto; }
+  body { display: block; overflow: visible; padding-bottom: calc(var(--timeline-h) + 8px); }
+  .bar { flex-wrap: wrap; height: auto; padding: 10px 16px 0; gap: 8px 12px; }
+  .search { flex: 1; min-width: 0; justify-content: flex-end; }
+  .search input { width: 100%; max-width: 170px; min-width: 0; }
+  #back-home { font-size: var(--step--1); padding: 7px 8px; }
+  .views { order: 3; width: 100%; overflow-x: auto; height: 44px; }
+  .views button { white-space: nowrap; }
+  .shell { display: block; }
+  .lede { padding: 18px 16px 8px; overflow: visible; }
+  .lede h1, .lede h1.is-long { font-size: var(--step-3); }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+  .facts b { font-size: var(--step-1); }
+  .lede-hint { margin-top: 0; max-width: none; }
+  .stage, .view { position: static; }
+  .canvas-host { position: relative; inset: auto; height: 58vh; }
+  #skyline, #spiral { right: auto; }
+  .tools { position: static; width: auto; padding: 12px 16px 20px; }
+  .view-flat { padding: 16px; overflow: visible; }
+  .forecast-grid, .sql-grid { grid-template-columns: minmax(0, 1fr); }
+  .chart-wrap { min-height: 320px; }
+  .sql-list { max-height: 220px; }
+  pre { max-height: 240px; }
+  .timeline { position: fixed; left: 0; right: 0; bottom: 0; height: var(--timeline-h); padding: 8px 16px; column-gap: 12px; background: rgba(12, 7, 32, 0.95); z-index: 5; }
+  #play { min-width: 0; padding: 8px 10px; }
+  .track-caption span:last-child { display: none; }
+  .stage-error { position: fixed; bottom: calc(var(--timeline-h) + 8px); z-index: 6; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
